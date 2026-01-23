@@ -15,16 +15,15 @@
             • Console.CursorVisible*/
 
             Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.Clear();
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.SetCursorPosition(10, 5);
             Console.CursorVisible = false;
-
             Console.WriteLine("Hello, World!");
-            Console.WindowHeight = 20;
-            Console.WindowWidth = 120;
-
-            Console.ReadLine();
-            Console.Clear();
+            Console.ResetColor();
+            Console.WindowHeight = 30;
+            Console.WindowWidth = 100;
+            Console.ReadKey();
         }
     }
 }
