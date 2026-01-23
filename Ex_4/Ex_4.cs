@@ -7,14 +7,12 @@
             /*Készítsünk programot, amely elkéri a felhasználó születési évét, ez alapján pedig kiszámítja és kiírja az
             életkorát.A program írja ki azt is, hány éves lesz a felhasználó a következő évben.*/
 
-            Console.Write("Add meg a születési éved: ");
-            int yearOfBirth = int.Parse(Console.ReadLine());
-            int yearNow = DateTime.Now.Year;
-            int age = yearNow - yearOfBirth;
-
-            Console.WriteLine($"Ebben az évben {age} éves vagy.");
-            Console.WriteLine($"Jövőre {age + 1} éves leszel.");
-
+            Console.Write("Kérem adja meg a születési évét: ");
+            int szuletesiEv = Convert.ToInt32(Console.ReadLine());
+            int jelenlegiEv = DateTime.Now.Year;
+            int eletkor = jelenlegiEv - szuletesiEv;
+            Console.WriteLine($"Az Ön életkora: {eletkor} év.");
+            Console.WriteLine($"A következő évben {eletkor + 1} éves lesz.");
             Console.ReadLine();
         }
     }
