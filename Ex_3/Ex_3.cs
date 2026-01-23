@@ -6,10 +6,10 @@
         {
             // Készítsünk programot, amely elkéri a felhasználó nevét, majd név szerint köszönti őt.
 
-            Console.Write("Kérem, adja meg a nevét: ");
-            string nev = Console.ReadLine();
-            Console.WriteLine($"Üdvözöllek, {nev}!");
-            Console.ReadKey();
+            Console.Write("Enter your name: ");
+            string name = Console.ReadLine();
+            Console.WriteLine($"Hello, {name}!");
+            Console.ReadLine();
         }
     }
 }
