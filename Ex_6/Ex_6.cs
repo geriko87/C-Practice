@@ -15,7 +15,7 @@
             int inMinutes = totalSeconds / 60;
             int inSeconds = totalSeconds % 60;
             Console.WriteLine($"The duration in seconds: {totalSeconds}");
-            Console.WriteLine($"The duration in formatted: {inMinutes}:{inSeconds:D2}");
+            Console.WriteLine($"The duration in formatted: {inMinutes:D2}:{inSeconds:D2}");
             Console.ReadKey();
         }       
     }
