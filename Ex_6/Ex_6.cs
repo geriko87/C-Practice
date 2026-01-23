@@ -10,12 +10,13 @@
             Az időtartam másodpercben: 123
             Az időtartam formázva: 2:03*/
 
-            Console.Write("Az időtartam másodpercben: ");
+            Console.Write("Enter a duration in seconds: ");
             int totalSeconds = int.Parse(Console.ReadLine());
-            int minutes = totalSeconds / 60;
-            int seconds = totalSeconds % 60;
-            Console.WriteLine($"Az időtartam formázva: {minutes}:{seconds:D2}");
+            int inMinutes = totalSeconds / 60;
+            int inSeconds = totalSeconds % 60;
+            Console.WriteLine($"The duration in seconds: {totalSeconds}");
+            Console.WriteLine($"The duration in formatted: {inMinutes}:{inSeconds:D2}");
             Console.ReadKey();
-        }
+        }       
     }
 }
