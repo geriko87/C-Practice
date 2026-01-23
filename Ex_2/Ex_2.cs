@@ -14,16 +14,19 @@
             • Console.SetCursorPosition()
             • Console.CursorVisible*/
 
-            Console.BackgroundColor = ConsoleColor.DarkBlue;
-            Console.Clear();
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.SetCursorPosition(10, 5);
-            Console.CursorVisible = false;
-            Console.WriteLine("Hello, World!");
-            Console.ResetColor();
-            Console.WindowHeight = 30;
+            Console.WindowHeight = 20;
             Console.WindowWidth = 100;
-            Console.ReadKey();
+            Console.BackgroundColor = ConsoleColor.Gray;
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.SetCursorPosition(5, 10);
+            Console.CursorVisible = false;
+
+            Console.WriteLine("Hello World!");
+            Console.ResetColor();
+            Console.WriteLine("Hello World!");
+            Console.Clear();
+            Console.ReadLine();
+            
         }
     }
 }
