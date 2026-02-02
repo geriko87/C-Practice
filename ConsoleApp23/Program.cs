@@ -15,7 +15,7 @@ namespace ConsoleApp23
             //"Pikk Dáma", "Pikk Király", "Pikk Ász" }
 
             string [] colours = { "Kör", "Káró", "Treff", "Pikk" };
-            string[] types = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jumbó", "Dáma", "Király", "Ász" };
+            string [] types = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jumbó", "Dáma", "Király", "Ász" };
 
             for (int i = 0; i < colours.Length; ++i) 
             {
