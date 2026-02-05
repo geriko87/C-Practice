@@ -17,14 +17,18 @@ namespace ConsoleApp26
             //• Ha benne van, hol található először ?
 
             List<string> words = new List<string>();
-            string input;
-            do 
+
+            while (true) 
             {
                 Console.Write($"Adj meg egy szót(Stop = befejezés): ");
-                input = Console.ReadLine();
+                string input = Console.ReadLine();
+                if (input == "Stop") 
+                {
+                    break;
+                }
                 words.Add(input);
             }
-            while(input != "Stop");
+
 
             Console.Write($"Add meg a keresett szót: ");
             string searchedWord = Console.ReadLine();
