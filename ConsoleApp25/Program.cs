@@ -25,6 +25,7 @@
 
             bool found = false;
             int index = 0;
+
             foreach (string w in words) 
             {
                 index++;
