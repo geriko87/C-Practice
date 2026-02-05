@@ -23,18 +23,18 @@
             string searchedWord = Console.ReadLine();
             Console.Clear();
 
-            bool result = false;
+            bool found = false;
             int index = 0;
             foreach (string w in words) 
             {
                 index++;
                 if (w == searchedWord)
                 {
-                    result = true;
+                    found = true;
                     break;
                 }
             }
-            if (result)
+            if (found)
             {
                 Console.WriteLine($"A keresett szó megtalálható a {index}. helyen.");
             }
